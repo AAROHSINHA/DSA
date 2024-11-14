@@ -1,0 +1,16 @@
+1. Linked List exists of nodes, which contain an value of any type and a memory address 
+   to the next listnode.
+2. Linked list is stored in head memory, so there is no continuous storage for it.
+3. Linked List can be both grown or shrinked during the runtime as it is dynamically
+   allocated.
+4. Types of linked list are - singly ll/ doubly ll/ circular ll/ doubly circular ll.
+
+5. Doubly Linked List also consists of ListNode which points to the next, as well as 
+   the previous ListNode. It contains the data, nextPtr, prevPtr
+
+6. In a circular linked list, the last node rather than pointing to null, points to the
+   head node.
+
+7. Doubly Linked list can also be circular. The next of last node points to the first 
+   node and the prev of the first node points to the last node.
+   
