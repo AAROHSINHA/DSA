@@ -1,0 +1,5 @@
+1. FIBONACCI-------------------------
+3. BINARY SEARCH---------------------
+4. CHECK IF AN ARRAY IS SORTED------
+
+2. SORTING ALGORITHMS RECURSIVE
