@@ -404,6 +404,21 @@ void ZigZagTraversal(Node* root){
     }
 }
 
+// 11. sorted array to BST
+Node* sortedBST(vector<int>& nums, int low, int high){
+    if(low > high) return NULL;
+    int mid = low + (high - low)/2;
+    Node* root = new Node(nums[mid]);
+    root->left = sortedBST(nums, 0, mid - 1);
+    root->right = sortedBST(nums, mid + 1, nums.size() - 1);
+    return root;
+}
+
+Node* sortedArrayToBST(vector<int>& nums) {
+    Node* root = sortedBST(nums, 0, nums.size() - 1);
+    return root;
+}
+
 int main(){
     Node* root = new Node(35);
     root->left = new Node(20);
